@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { InstagramWidgetComponent } from './instagram-widget/instagram-widget.component';
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { InstagramWidgetComponent } from './instagram-widget/instagram-widget.co
     MenuComponent,
     MainPageComponent,
     InstagramWidgetComponent,
+    FeedbackFormComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+@import '../../colors.scss';
+
+#blur {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000, $alpha: 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-box {
+    width: 60%;
+    height: 60%;
+    background-color: $light-grey;
+    padding: 1rem;
+}
+
+input, label {
+    display: block;
+}
