@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-instagram-widget',
@@ -7,11 +8,18 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InstagramWidgetComponent implements OnInit {
   @Input()
-  public postId!: string;
+  public postId: string;
+  iframeSrc: SafeResourceUrl;
 
-  get iframeSrc() {
-    return `https://www.instagram.com/p/${this.postId}/embed`;
+  constructor(private sanitizer: DomSanitizer) {}
+
+  static buildEmbedUrl(postId: string) {
+    return `https://www.instagram.com/p/${postId}/embed`;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.iframeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(
+      InstagramWidgetComponent.buildEmbedUrl(this.postId)
+    );
+  }
 }
