@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MapOptions, Marker, latLng, icon } from 'leaflet';
+import { kitchenItems } from '../constants/items';
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +8,11 @@ import { MapOptions, Marker, latLng, icon } from 'leaflet';
   styleUrls: ['./main-page.component.scss'],
 })
 export class MainPageComponent {
+  kitchenItems = kitchenItems;
+
   mapOptions: MapOptions = {
     layers: [
-      new Marker([54.7800533, 31.859879], {
+      new Marker([54.7800533, 32.059879], {
         icon: icon({
           iconUrl: 'assets/images/leaf-green.png',
           iconSize: [38, 95],

@@ -31,13 +31,21 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: auto;
   align-content: center;
 
   &-item {
-    flex: 1 0 auto;
-    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
     max-width: 20vw;
+
+    span {
+      font-size: 1.1rem;
+      margin: 1rem auto;
+    }
   }
 }

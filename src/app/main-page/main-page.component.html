@@ -6,10 +6,10 @@
   <h1>Кухня</h1>
   <p>Деревянные принадлежности для кухни, сделанные с душой</p>
   <div class="gallery">
-    <img src="../../assets/images/items/kitchen/1.jpg" class="gallery-item">
-    <img src="../../assets/images/items/kitchen/2.jpg" class="gallery-item">
-    <img src="../../assets/images/items/kitchen/3.jpg" class="gallery-item">
-    <img src="../../assets/images/items/kitchen/4.jpg" class="gallery-item">
+    <div *ngFor="let item of kitchenItems" class="gallery-item">
+        <img src="{{ '../../assets/images/items/' + item.imagePath }}" class="gallery-item">
+        <span>{{ item.name }}</span>
+    </div>
   </div>
 </div>
 <div class="section container">
