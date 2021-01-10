@@ -20,6 +20,7 @@ export class NotificationComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.visible = true;
     console.log(this.remember);
     if (this.remember) {
       if (!window.localStorage.getItem(`${this.remember}:showed`)) {
