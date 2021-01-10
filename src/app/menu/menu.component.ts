@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -8,13 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
   open = false;
   scrollerVisible = false;
-
+  
   ngOnInit() {
-    window.onscroll = () => {
-      if (window.scrollY > 20) {
-        this.scrollerVisible = true;
-      }
-    };
+    window.onscroll = () => this.scrollerVisible = window.scrollY > 20;
   }
 
   onMenuButtonClick() {
