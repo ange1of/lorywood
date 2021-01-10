@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { InstagramWidgetComponent } from './instagram-widget/instagram-widget.component';
 import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,10 @@ import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
     MainPageComponent,
     InstagramWidgetComponent,
     FeedbackFormComponent,
+    MapComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
