@@ -1,4 +1,4 @@
-<nav>
+<nav *ngIf="open">
     <a href="">Кухня</a>
     <a href="">Светильники</a>
     <a href="">Интерьер</a>
@@ -6,5 +6,5 @@
     <a href="">Отзывы</a>
     <a href="">Контакты</a>
 </nav>
-<button>Home</button>
-<button>Menu</button>
+<button>Home (Logo&Scroll)</button>
+<button (click)="onMenuButtonClick()">Menu (Show&Hide)</button>
