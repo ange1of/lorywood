@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { InstagramWidgetComponent } from './instagram-widget/instagram-widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     MainPageComponent,
+    InstagramWidgetComponent,
   ],
   imports: [
     BrowserModule,

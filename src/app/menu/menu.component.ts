@@ -8,9 +8,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class MenuComponent implements OnInit {
   open = false;
   scrollerVisible = false;
-  
+
   ngOnInit() {
-    window.onscroll = () => this.scrollerVisible = window.scrollY > 20;
+    window.onscroll = () => (this.scrollerVisible = window.scrollY > 20);
   }
 
   onMenuButtonClick() {
