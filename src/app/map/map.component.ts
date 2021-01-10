@@ -13,12 +13,9 @@ export class MapComponent implements OnInit {
 
   map: Map;
 
-  constructor(private element: ElementRef, private zone: NgZone) {
-    // this.map = map(this.element.nativeElement);
-  }
+  constructor(private element: ElementRef, private zone: NgZone) {}
 
   ngOnInit(): void {
-    console.log(this.options);
     this.map = map(this.element.nativeElement, this.options);
     tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,

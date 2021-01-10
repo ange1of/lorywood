@@ -1,0 +1,27 @@
+@import "../../colors.scss";
+
+.notification {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  animation: fadeIn ease 1s;
+
+  background-color: $light-grey;
+  border-radius: 3px;
+  padding: 1em;
+
+  &-close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

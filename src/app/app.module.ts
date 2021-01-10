@@ -8,6 +8,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { InstagramWidgetComponent } from './instagram-widget/instagram-widget.component';
 import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 import { MapComponent } from './map/map.component';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MapComponent } from './map/map.component';
     InstagramWidgetComponent,
     FeedbackFormComponent,
     MapComponent,
+    NotificationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
