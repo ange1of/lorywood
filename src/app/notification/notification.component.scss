@@ -14,7 +14,13 @@
     position: absolute;
     right: 1em;
     top: 1em;
-    cursor: pointer;
+    background-image: url('../../assets/images/cancel-icon.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: transparent;
   }
 }
 

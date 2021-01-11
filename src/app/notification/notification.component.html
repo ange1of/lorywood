@@ -1,5 +1,5 @@
 <div class="notification" *ngIf="visible">
-  <div class="notification-close" (click)="onCloseClick()">[x]</div>
+  <button class="notification-close" (click)="onCloseClick()"></button>
   <h2>{{ headerText }}</h2>
   <h4>{{ mainText }}</h4>
 </div>
