@@ -8,7 +8,6 @@ import { PhotoItem } from '../constants/items';
 })
 export class OrderFormComponent {
 
-  @Input() item: PhotoItem | null = null;
-
-  close() {}
+  @Input() item: PhotoItem;
+  @Input() close: () => void;
 }

@@ -2,7 +2,8 @@
   <div *ngFor="let item of items" class="gallery-item">
     <div [ngSwitch]="item.type">
       <div *ngSwitchCase="itemType.image">
-        <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item">
+        <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item"
+              (click)="createOrder($any(item))">
         <span>{{ $any(item).name }}</span>
       </div>
       <div *ngSwitchCase="itemType.instagram">
@@ -11,3 +12,4 @@
     </div>
   </div>
 </div>
+<ng-template #order></ng-template>
