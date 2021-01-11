@@ -25,7 +25,7 @@ export class MainPageComponent {
         }),
       }),
     ],
-    zoom: 7,
+    zoom: 4,
     center: latLng(54.7800533, 31.859879),
   };
 }
