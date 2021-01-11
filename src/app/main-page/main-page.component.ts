@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MapOptions, Marker, latLng, icon } from 'leaflet';
-import { kitchenItems } from '../constants/items';
+import { ItemType, kitchenItems, lightItems } from '../constants/items';
 
 @Component({
   selector: 'app-main-page',
@@ -8,7 +8,9 @@ import { kitchenItems } from '../constants/items';
   styleUrls: ['./main-page.component.scss'],
 })
 export class MainPageComponent {
+  itemType = ItemType;
   kitchenItems = kitchenItems;
+  lightItems = lightItems;
 
   mapOptions: MapOptions = {
     layers: [

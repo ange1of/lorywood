@@ -7,15 +7,32 @@
   <p>Деревянные принадлежности для кухни, сделанные с душой</p>
   <div class="gallery">
     <div *ngFor="let item of kitchenItems" class="gallery-item">
-        <img src="{{ '../../assets/images/items/' + item.imagePath }}" class="gallery-item">
-        <span>{{ item.name }}</span>
+      <div [ngSwitch]="item.type">
+        <div *ngSwitchCase="itemType.image">
+          <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item">
+          <span>{{ $any(item).name }}</span>
+        </div>
+        <div *ngSwitchCase="itemType.instagram">
+          <app-instagram-widget postId="{{ $any(item).postId }}" class="gallery-item"></app-instagram-widget>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <div class="section container">
   <h1>Светильники</h1>
   <div class="gallery">
-    <app-instagram-widget postId="CEyOTKIJ-VO" class="gallery-item"></app-instagram-widget>
+    <div *ngFor="let item of lightItems" class="gallery-item">
+      <div [ngSwitch]="item.type">
+        <div *ngSwitchCase="itemType.image">
+          <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item">
+          <span>{{ $any(item).name }}</span>
+        </div>
+        <div *ngSwitchCase="itemType.instagram">
+          <app-instagram-widget postId="{{ $any(item).postId }}" class="gallery-item"></app-instagram-widget>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="section container">
