@@ -3,11 +3,11 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-button {
+button, input[type=submit] {
     border: none;
 }
 
-button:hover {
+button:hover, input[type=submit]:hover {
     cursor: pointer;
 }
 

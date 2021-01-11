@@ -4,7 +4,7 @@ export enum ItemType {
   instagram,
 }
 
-type PhotoItem = {
+export type PhotoItem = {
   type: ItemType.image;
   name: string;
   description?: string;
