@@ -5,35 +5,11 @@
 <div class="section container">
   <h1>Кухня</h1>
   <p>Деревянные принадлежности для кухни, сделанные с душой</p>
-  <div class="gallery">
-    <div *ngFor="let item of kitchenItems" class="gallery-item">
-      <div [ngSwitch]="item.type">
-        <div *ngSwitchCase="itemType.image">
-          <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item">
-          <span>{{ $any(item).name }}</span>
-        </div>
-        <div *ngSwitchCase="itemType.instagram">
-          <app-instagram-widget postId="{{ $any(item).postId }}" class="gallery-item"></app-instagram-widget>
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-gallery [items]="kitchenItems"></app-gallery>
 </div>
 <div class="section container">
   <h1>Светильники</h1>
-  <div class="gallery">
-    <div *ngFor="let item of lightItems" class="gallery-item">
-      <div [ngSwitch]="item.type">
-        <div *ngSwitchCase="itemType.image">
-          <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item">
-          <span>{{ $any(item).name }}</span>
-        </div>
-        <div *ngSwitchCase="itemType.instagram">
-          <app-instagram-widget postId="{{ $any(item).postId }}" class="gallery-item"></app-instagram-widget>
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-gallery [items]="lightItems"></app-gallery>
 </div>
 <div class="section container">
   <h1>Интерьер</h1>

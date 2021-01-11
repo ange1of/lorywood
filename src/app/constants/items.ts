@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-shadow
 export enum ItemType {
   image,
   instagram,
@@ -15,13 +16,7 @@ type InstagramItem = {
   postId: string;
 };
 
-type Item = PhotoItem | InstagramItem;
-
-// export interface Item {
-//   name: string;
-//   description?: string;
-//   imagePath: string;
-// }
+export type Item = PhotoItem | InstagramItem;
 
 export const kitchenItems: Item[] = [
   {

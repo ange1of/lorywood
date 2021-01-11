@@ -1,0 +1,13 @@
+<div class="gallery">
+  <div *ngFor="let item of items" class="gallery-item">
+    <div [ngSwitch]="item.type">
+      <div *ngSwitchCase="itemType.image">
+        <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item">
+        <span>{{ $any(item).name }}</span>
+      </div>
+      <div *ngSwitchCase="itemType.instagram">
+        <app-instagram-widget postId="{{ $any(item).postId }}" class="gallery-item"></app-instagram-widget>
+      </div>
+    </div>
+  </div>
+</div>

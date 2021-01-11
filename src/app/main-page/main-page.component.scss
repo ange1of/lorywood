@@ -10,7 +10,7 @@
   align-items: center;
 
   img {
-      width: 15%;
+    width: 15%;
   }
 }
 
@@ -25,27 +25,4 @@
 
 .section {
   min-height: 100vh;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: auto;
-  align-content: center;
-
-  &-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem;
-    max-width: 20vw;
-
-    span {
-      font-size: 1.1rem;
-      margin: 1rem auto;
-    }
-  }
 }
