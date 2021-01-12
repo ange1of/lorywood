@@ -23,5 +23,6 @@ export class MapComponent implements OnInit {
         '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
     }).addTo(this.map);
     this.map.dragging.disable();
+    this.map.zoomControl.remove();
   }
 }

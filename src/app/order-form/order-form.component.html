@@ -1,29 +1,32 @@
 <div id="blur">
-    <div id="content-box">
-        <h2>Создание заказа</h2>
-        <div id="order-form">
-            <form [formGroup]="form" (submit)="onSubmit()">
-                <label for="count">Количество<span>*</span>
-                    <span *ngIf="form.get('count')?.invalid && (form.get('count')?.dirty || form.get('count')?.touched)" class="error-message"> (Введите положительное число)</span>
-                </label>
-                <input name="count" type="number" formControlName="count">
-                <label for="details">Ваши пожелания</label>
-                <textarea name="details" rows="6" formControlName="details"
-                    placeholder="Например, размер 10х30 см, материал - осина, цвет - красное дерево"></textarea>
-                <label for="contact">Способ и время связи<span>*</span>
-                    <span *ngIf="form.get('contact')?.invalid && (form.get('contact')?.dirty || form.get('contact')?.touched)" class="error-message"> (Это поле обязательно)</span>
-                </label>
-                <textarea name="contact" rows="6" formControlName="contact"
-                    placeholder="Например, WhatsApp +7(123)456-78-90, звонить после 19:00"></textarea>
-                <input id="submit-button" [ngClass]="{'success-submit': submitted}"type="submit" value="{{ submitted ? '' : 'Отправить'}}">
-            </form>
-        </div>
-        <div id="item-info">
-            <div class="image-container">
-                <img src="{{ '../../assets/images/items/' + item.imagePath }}">
-            </div>
-            <h3>{{ item.name }}</h3>
-        </div>
-        <button id="close-form" (click)="close()"></button>
+  <div id="content-box">
+    <h2>Создание заказа</h2>
+    <div id="order-form">
+      <form [formGroup]="form" (submit)="onSubmit()">
+        <label for="count">Количество<span>*</span>
+          <span *ngIf="form.get('count')?.invalid && (form.get('count')?.dirty || form.get('count')?.touched)"
+            class="error-message"> (Введите положительное число)</span>
+        </label>
+        <input name="count" type="number" formControlName="count">
+        <label for="details">Ваши пожелания</label>
+        <textarea name="details" rows="6" formControlName="details"
+          placeholder="Например, размер 10х30 см, материал - осина, цвет - красное дерево"></textarea>
+        <label for="contact">Способ и время связи<span>*</span>
+          <span *ngIf="form.get('contact')?.invalid && (form.get('contact')?.dirty || form.get('contact')?.touched)"
+            class="error-message"> (Это поле обязательно)</span>
+        </label>
+        <textarea name="contact" rows="6" formControlName="contact"
+          placeholder="Например, WhatsApp +7(123)456-78-90, звонить после 19:00"></textarea>
+        <input id="submit-button" [ngClass]="{'success-submit': submitted}" type="submit"
+          value="{{ submitted ? '' : 'Отправить'}}">
+      </form>
     </div>
+    <div id="item-info">
+      <div class="image-container">
+        <img src="{{ '/assets/images/items/' + item.imagePath }}">
+      </div>
+      <h3>{{ item.name }}</h3>
+    </div>
+    <button id="close-form" (click)="close()"></button>
+  </div>
 </div>
