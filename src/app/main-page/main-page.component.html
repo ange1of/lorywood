@@ -59,7 +59,11 @@
         </a>
       </div>
     </div>
-    <app-map [options]="mapOptions" style="height: 100%; width: 100%;"></app-map>
+    <div class="map-container">
+      <div>
+        <app-map [options]="mapOptions" style="height: 100%; width: 100%;"></app-map>
+      </div>
+    </div>
   </div>
 </div>
 <app-notification remember="deal" headerText="Акция!" mainText="-10% на всё! Промокод WINTER"></app-notification>
