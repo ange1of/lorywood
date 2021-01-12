@@ -10,6 +10,7 @@ import { OrderFormComponent } from './order-form/order-form.component';
 import { MapComponent } from './map/map.component';
 import { NotificationComponent } from './notification/notification.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     NotificationComponent,
     GalleryComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

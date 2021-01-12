@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { PhotoItem } from '../constants/items';
 
 @Component({
@@ -10,4 +11,24 @@ export class OrderFormComponent {
 
   @Input() item: PhotoItem;
   @Input() close: () => void;
+
+  form = new FormGroup({
+    count: new FormControl(1, [Validators.required, Validators.min(1)]),
+    details: new FormControl(''),
+    contact: new FormControl('', [Validators.required])
+  });
+
+  submitted = false;
+
+  onSubmit() {
+    if (this.form.valid) {
+      this.submitted = true;
+      console.log(this.form.value);
+      setTimeout(() => this.close(), 1600);
+    } else {
+      console.log('form invalid');
+    }
+
+  }
+
 }

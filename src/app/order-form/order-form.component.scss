@@ -72,7 +72,7 @@
             width: 3rem;
         }
 
-        input:focus, textarea:focus {
+        input[type=number]:focus, input[type=text]:focus, textarea:focus {
             box-shadow: inset 0px -3px 0px $yellow-green;
             outline: none;
         }
@@ -80,6 +80,14 @@
         textarea {
             width: 100%;
             resize: none;
+        }
+
+        input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+            border-left: 3px solid red;
+        }
+
+        .error-message {
+            color: red;
         }
     }
 }
@@ -107,6 +115,30 @@
     background-color: $dark-green;
     color: $light-grey;
     outline: none;
+}
+
+.success-submit {
+    background-color: transparent;
+    background-image: url('../../assets/images/tick-icon.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: success-submit-animation 0.3s forwards;
+    border: none;
+    outline: none;
+}
+
+@keyframes success-submit-animation {
+    to {
+        width: 3rem;
+        height: 3rem;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        border-radius: 50%;
+        background-color: transparent;
+    }
 }
 
 #close-form {
