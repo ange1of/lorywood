@@ -53,6 +53,37 @@ export const lightItems: Item[] = [
   },
 ];
 
+export const interiorItems: Item[] = [
+  {
+    type: ItemType.image,
+    name: 'Часы настренные в форме среза ствола',
+    imagePath: 'interior/1.jpg',
+  },
+  {
+    type: ItemType.image,
+    name: 'Настенный держатель для бутылки и бокалов',
+    imagePath: 'interior/2.jpg',
+  },
+];
+
+export const souvenirsItems: Item[] = [
+  {
+    type: ItemType.image,
+    name: 'Полка настенная в с подкадкой в форме сердца',
+    imagePath: 'souvenirs/1.jpg',
+  },
+  {
+    type: ItemType.image,
+    name: 'Пара зайцев',
+    imagePath: 'souvenirs/2.jpg',
+  },
+  {
+    type: ItemType.image,
+    name: 'Бычок',
+    imagePath: 'souvenirs/4.jpg',
+  },
+];
+
 export type Review = {
   name: string;
   comment: string;
