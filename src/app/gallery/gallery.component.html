@@ -1,10 +1,10 @@
 <div class="gallery">
   <div *ngFor="let item of items" class="gallery-item">
     <div [ngSwitch]="item.type">
-      <div *ngSwitchCase="itemType.image">
-        <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item"
-              (click)="createOrder($any(item))">
+      <div *ngSwitchCase="itemType.image" class="gallery-image-item" (mouseenter)="$any(item).isHovering=true" (mouseleave)="$any(item).isHovering=false">
+        <img src="{{ '../../assets/images/items/' + $any(item).imagePath }}" class="gallery-item">
         <span>{{ $any(item).name }}</span>
+        <button *ngIf="$any(item).isHovering" class="order-button" (click)="createOrder($any(item))">Хочу!</button>
       </div>
       <div *ngSwitchCase="itemType.instagram">
         <app-instagram-widget postId="{{ $any(item).postId }}" class="gallery-item"></app-instagram-widget>

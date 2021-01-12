@@ -9,6 +9,7 @@ export type PhotoItem = {
   name: string;
   description?: string;
   imagePath: string;
+  isHovering?: boolean | null;
 };
 
 type InstagramItem = {
