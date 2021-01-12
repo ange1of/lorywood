@@ -1,4 +1,4 @@
-<nav *ngIf="open">
+<nav [ngClass]="{'nav-open': open}">
   <a href="#kitchen" (click)="onMenuButtonClick()">Кухня</a>
   <a href="#light" (click)="onMenuButtonClick()">Светильники</a>
   <a href="#interior" (click)="onMenuButtonClick()">Интерьер</a>
