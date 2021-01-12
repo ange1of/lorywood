@@ -22,5 +22,6 @@ export class MapComponent implements OnInit {
       attribution:
         '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
     }).addTo(this.map);
+    this.map.dragging.disable();
   }
 }
