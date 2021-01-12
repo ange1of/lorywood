@@ -26,6 +26,7 @@ export class OrderFormComponent {
       console.log(this.form.value);
       setTimeout(() => this.close(), 1600);
     } else {
+      this.form.markAllAsTouched();
       console.log('form invalid');
     }
 
