@@ -55,6 +55,16 @@
   min-height: 100vh;
 }
 
+#interior {
+  background-image: url('/assets/images/edgeless-texture.png');
+  background-size: 15%;
+
+  app-gallery {
+    padding: 2rem;
+    background-color: white;
+  }
+}
+
 #feedback {
   height: 100vh;
   background-image: url('../../assets/images/green-ornament.png');
