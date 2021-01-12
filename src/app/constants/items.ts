@@ -50,7 +50,7 @@ export const lightItems: Item[] = [
   },
   {
     type: ItemType.image,
-    name: 'Крепление в виде среза ствола',
+    name: 'Люстра из среза дерева в стиле лофт',
     imagePath: 'light/2.jpg',
   },
   {
@@ -103,7 +103,7 @@ export type Review = {
 
 export const reviews: Review[] = [
   {
-    name: 'Данил из ИТМО',
+    name: 'Данил из с. Кабачково',
     comment: 'Очень креативные изделия, дерево лучшего качества',
   },
   {
