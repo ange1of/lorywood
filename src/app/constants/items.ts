@@ -68,7 +68,7 @@ export const lightItems: Item[] = [
 export const interiorItems: Item[] = [
   {
     type: ItemType.image,
-    name: 'Часы настенные в форме среза ствола',
+    name: 'Часы настенные из среза дерева',
     imagePath: 'interior/1.jpg',
   },
   {
