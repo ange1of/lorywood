@@ -29,7 +29,7 @@
   <h1>Контакты</h1>
   <div class="contacts">
     <div class="contacts-info">
-      <p>Смоленск, ул. Первомайская д.10 офис 323</p>
+      <p>Мы производим изделия в Смоленске, но доставляем по всему миру. Ищите нас в соцсетях :)</p>
       <div class="contacts-info-socials">
         <a href="http://instagram.com/lorywood.ru">
           <svg id="logo-instagram" height="48" width="48" viewBox="0 0 511 511.9" xmlns="http://www.w3.org/2000/svg">
@@ -60,12 +60,13 @@
           </svg>
         </a>
       </div>
-    </div>
-    <div class="map-container">
-      <div>
-        <app-map [options]="mapOptions" style="height: 100%; width: 100%;"></app-map>
+      <div class="map-container">
+        <div>
+          <app-map [options]="mapOptions" style="height: 100%; width: 100%;"></app-map>
+        </div>
       </div>
     </div>
+    <app-instagram-widget postId="CI7UC3ZJuRi"></app-instagram-widget>
   </div>
 </div>
 <app-notification remember="deal" headerText="Акция!" mainText="-10% на всё! Промокод WINTER"></app-notification>
