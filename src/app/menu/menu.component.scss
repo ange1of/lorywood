@@ -1,44 +1,61 @@
-@import '../../colors.scss';
+@import "../../colors.scss";
 
 nav {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $light-grey;
-    position: fixed;
-    top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-grey;
+  position: fixed;
+  top: 0;
+
+  margin-left: 100%;
+  transition: margin-left 0.5s ease-out;
 }
 
-#home-button, #menu-button {
-    position: fixed;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
+.nav-open {
+  margin-left: 0;
+}
+
+@keyframes flowRight {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+#home-button,
+#menu-button {
+  position: fixed;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #menu-button {
-    top: 15px;
-    right: 10px;
-    background-image: url('../../assets/images/menu-icon.png');
-    background-size: 99% 99%;
-    width: 50px;
-    height: 50px;
+  top: 15px;
+  right: 10px;
+  background-image: url("../../assets/images/menu-icon.png");
+  background-size: 99% 99%;
+  width: 50px;
+  height: 50px;
 }
 
 #home-button {
-    position: fixed;
-    top: 10px;
-    left: 30px;
-    background-image: url('../../assets/images/green-logo.png');
-    background-size: contain;
-    width: 80px;
-    height: 60px;
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  background-image: url("../../assets/images/green-logo.png");
+  background-size: contain;
+  width: 80px;
+  height: 60px;
 }
 
 a {
-    color: $dark-green;
-    font-size: 1.4rem;
-    margin: 0 2rem;
+  color: $dark-green;
+  font-size: 1.4rem;
+  margin: 0 2rem;
 }
