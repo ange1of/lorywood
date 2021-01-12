@@ -55,6 +55,17 @@
   min-height: 100vh;
 }
 
+#kitchen {
+  background-image: url('/assets/images/wood-texture.png');
+  background-position: center;
+  background-size: cover;
+
+  app-gallery {
+    padding: 1rem;
+    background-color: white;
+  }
+}
+
 #interior {
   background-image: url('/assets/images/edgeless-texture.png');
   background-size: 15%;
