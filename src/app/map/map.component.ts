@@ -1,5 +1,4 @@
 import { Component, ElementRef, Input, NgZone, OnInit } from '@angular/core';
-import 'leaflet/dist/leaflet.css';
 import { Map, MapOptions, map, tileLayer } from 'leaflet';
 
 @Component({
