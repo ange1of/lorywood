@@ -11,6 +11,7 @@ import { MapComponent } from './map/map.component';
 import { NotificationComponent } from './notification/notification.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MapComponent,
     NotificationComponent,
     GalleryComponent,
+    ReviewsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

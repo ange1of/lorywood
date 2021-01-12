@@ -1,0 +1,20 @@
+@import "../../colors.scss";
+
+.review-container {
+  width: 60vw;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+
+  background-color: $dark-green;
+  border-radius: 1em;
+
+  &:nth-child(even) {
+    float: right;
+  }
+}

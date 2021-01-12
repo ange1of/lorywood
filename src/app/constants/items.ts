@@ -52,3 +52,19 @@ export const lightItems: Item[] = [
     postId: 'B7ti-O7C0bQ',
   },
 ];
+
+export type Review = {
+  name: string;
+  comment: string;
+};
+
+export const reviews: Review[] = [
+  {
+    name: 'Данил из ИТМО',
+    comment: 'Очень креативные изделия, дерево лучшего качества',
+  },
+  {
+    name: 'xXx[Pepega]xXx',
+    comment: 'Менажница подошла к моей зеленой жабе',
+  },
+];
