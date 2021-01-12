@@ -44,19 +44,31 @@ export const kitchenItems: Item[] = [
 
 export const lightItems: Item[] = [
   {
-    type: ItemType.instagram,
-    postId: 'CEyOTKIJ-VO',
+    type: ItemType.image,
+    name: 'Подсвечник уровневый',
+    imagePath: 'light/1.jpg',
   },
   {
-    type: ItemType.instagram,
-    postId: 'B7ti-O7C0bQ',
+    type: ItemType.image,
+    name: 'Крепление в виде среза ствола',
+    imagePath: 'light/2.jpg',
+  },
+  {
+    type: ItemType.image,
+    name: 'Сердечный подсвечник',
+    imagePath: 'light/5.jpg',
+  },
+  {
+    type: ItemType.image,
+    name: 'Ретро-светильник с мягким светом',
+    imagePath: 'light/6.jpg',
   },
 ];
 
 export const interiorItems: Item[] = [
   {
     type: ItemType.image,
-    name: 'Часы настренные в форме среза ствола',
+    name: 'Часы настенные в форме среза ствола',
     imagePath: 'interior/1.jpg',
   },
   {
