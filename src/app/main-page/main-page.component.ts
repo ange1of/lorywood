@@ -4,6 +4,8 @@ import {
   ItemType,
   kitchenItems,
   lightItems,
+  interiorItems,
+  souvenirsItems,
   reviews,
 } from '../constants/items';
 
@@ -16,6 +18,8 @@ export class MainPageComponent {
   itemType = ItemType;
   kitchenItems = kitchenItems;
   lightItems = lightItems;
+  interiorItems = interiorItems;
+  souveniersItems = souvenirsItems;
   reviews = reviews;
 
   mapOptions: MapOptions = {
