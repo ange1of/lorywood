@@ -15,7 +15,7 @@
     width: 15%;
   }
 
-  p {
+  div {
     color: $dark-green;
     position: absolute;
     font-size: 1.5rem;
@@ -32,12 +32,12 @@
 
   .text-left {
     left: 3%;
-    top: 55%;
+    top: 60%;
     animation: fadeIn 0.5s 1s 1 forwards;
   }
   .text-right {
-    right: 3%;
-    top: 35%;
+    right: 4%;
+    top: 15%;
     animation: fadeIn 0.5s 2s 1 forwards;
   }
 }
@@ -57,6 +57,11 @@
 
 #feedback {
   height: 100vh;
+  background-image: url('../../assets/images/green-ornament.png');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-color: $light-yellow;
 }
 
 #contacts {

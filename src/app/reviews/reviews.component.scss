@@ -15,9 +15,10 @@
   padding: 0.5em 1em;
   margin: 1em 0;
 
-  background-color: $light-green;
+  background-color: $almost-white;
   border-radius: 1em;
-  border-style: solid;
+  border: 3px solid $yellow-green;
+  color: $dark-green;
 
   &:nth-child(even) {
     align-self: flex-end;
