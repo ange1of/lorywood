@@ -2,22 +2,25 @@
 <div id="main-image">
   <img src="../../assets/images/white-logo.png">
 </div>
-<div class="section container" id="kitchen-section">
+<div class="section container" id="kitchen">
   <h1>Кухня</h1>
   <p>Деревянные принадлежности для кухни, сделанные с душой</p>
   <app-gallery [items]="kitchenItems"></app-gallery>
 </div>
-<div class="section container">
+<div class="section container" id="light">
   <h1>Светильники</h1>
   <app-gallery [items]="lightItems"></app-gallery>
 </div>
-<div class="section container">
+<div class="section container" id="interior">
   <h1>Интерьер</h1>
 </div>
-<div class="section container">
+<div class="section container" id="souvenirs">
   <h1>Сувениры</h1>
 </div>
-<div class="section container">
+<div class="section container" id="feedback">
+  <h1>Отзывы</h1>
+</div>
+<div class="section container" id="contacts">
   <h1>Где мы</h1>
   <app-map [options]="mapOptions" style="height: 60vh; width: 80vw;"></app-map>
 </div>

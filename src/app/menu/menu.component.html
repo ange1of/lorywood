@@ -1,10 +1,10 @@
 <nav *ngIf="open">
-  <a href="">Кухня</a>
-  <a href="">Светильники</a>
-  <a href="">Интерьер</a>
-  <a href="">Сувениры</a>
-  <a href="">Отзывы</a>
-  <a href="">Контакты</a>
+  <a href="#kitchen" (click)="onMenuButtonClick()">Кухня</a>
+  <a href="#light" (click)="onMenuButtonClick()">Светильники</a>
+  <a href="#interior" (click)="onMenuButtonClick()">Интерьер</a>
+  <a href="#souvenirs" (click)="onMenuButtonClick()">Сувениры</a>
+  <a href="#feedback" (click)="onMenuButtonClick()">Отзывы</a>
+  <a href="#contacts" (click)="onMenuButtonClick()">Контакты</a>
 </nav>
 <button *ngIf="scrollerVisible" id="home-button" (click)="onHomeButtonClick()"></button>
 <button id="menu-button" (click)="onMenuButtonClick()"></button>
