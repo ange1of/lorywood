@@ -3,7 +3,7 @@
 #main-image {
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/images/main-image.png");
+  background-image: url("/assets/images/main-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +56,7 @@
 }
 
 #kitchen {
-  background-image: url('/assets/images/wood-texture.png');
+  background-image: url("/assets/images/wood-texture.png");
   background-position: center;
   background-size: cover;
 
@@ -67,7 +67,7 @@
 }
 
 #interior {
-  background-image: url('/assets/images/edgeless-texture.png');
+  background-image: url("/assets/images/edgeless-texture.png");
   background-size: 15%;
 
   app-gallery {
