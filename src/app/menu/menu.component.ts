@@ -23,6 +23,10 @@ export class MenuComponent implements OnInit {
   }
 
   onHomeButtonClick() {
+    location.reload();
+  }
+
+  onUpButtonClick() {
     if (window.scrollY !== 0) {
       window.scroll({ top: 0, behavior: 'smooth' });
     }

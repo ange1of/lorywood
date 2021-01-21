@@ -6,5 +6,6 @@
   <a href="#feedback" (click)="onMenuButtonClick()">Отзывы</a>
   <a href="#contacts" (click)="onMenuButtonClick()">Контакты</a>
 </nav>
-<button *ngIf="scrollerVisible" id="home-button" (click)="onHomeButtonClick()"></button>
+<button id="home-button" (click)="onHomeButtonClick()"></button>
 <button id="menu-button" (click)="onMenuButtonClick()" #menuButton></button>
+<button *ngIf="scrollerVisible" id="up-button" (click)="onUpButtonClick()"></button>
