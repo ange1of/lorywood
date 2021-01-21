@@ -18,12 +18,14 @@ nav {
   margin-left: 0;
 }
 
-@keyframes flowRight {
-  from {
-    margin-left: 100%;
-  }
+.menu-button-clicked {
+  animation: rotate 0.4s forwards;
+}
+
+
+@keyframes rotate {
   to {
-    margin-left: 0;
+    transform: rotate(180deg);
   }
 }
 

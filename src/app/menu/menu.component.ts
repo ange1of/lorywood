@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,6 +6,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
+
+  @ViewChild('menuButton') menuButton: ElementRef;
+
   open = false;
   scrollerVisible = false;
 
@@ -15,6 +18,8 @@ export class MenuComponent implements OnInit {
 
   onMenuButtonClick() {
     this.open = !this.open;
+    this.menuButton.nativeElement.classList.remove('menu-button-clicked');
+    setTimeout(() => this.menuButton.nativeElement.classList.add('menu-button-clicked'));
   }
 
   onHomeButtonClick() {
